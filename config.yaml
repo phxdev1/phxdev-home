@@ -1,4 +1,4 @@
-title: Stackbit Fresh Theme
+title: PhxDev | Mark Scott
 baseURL: /
 params:
   footer:
@@ -9,7 +9,7 @@ params:
     has_nav: true
     has_social: true
     profile_img: /images/20190312_122408-removebg.png
-    tagline: Header Tagline
+    tagline: 'I drink beer, I write code.'
     title: PhxDev
   layout_style: overflow
   palette: orange
