@@ -1,20 +1,17 @@
 title: Stackbit Fresh Theme
 baseURL: /
 params:
-  layout_style: overflow
-  palette: blue
+  footer:
+    content: '&copy; Mark Scott. All rights reserved.'
+    links: []
   header:
-    title: Stackbit Fresh
-    tagline: Header Tagline
-    profile_img: images/avatar.png
     bg: dark
     has_nav: true
     has_social: true
-  footer:
-    content: '&copy; Stackbit-Fresh. All rights reserved.'
-    links:
-      - text: Made with Stackbit
-        url: 'https://www.stackbit.com'
-        new_window: true
+    profile_img: /images/20190312_122408-removebg.png
+    tagline: Header Tagline
+    title: PhxDev
+  layout_style: overflow
+  palette: orange
 disableKinds:
   - RSS
