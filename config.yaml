@@ -5,7 +5,7 @@ params:
     content: '&copy; Mark Scott. All rights reserved.'
     links: []
   header:
-    bg: light
+    bg: dark
     has_nav: true
     has_social: true
     profile_img: /images/20190312_122408-removebg.png
@@ -13,5 +13,7 @@ params:
     title: PhxDev
   layout_style: overflow
   palette: orange
+menu:
+  main: []
 disableKinds:
   - RSS
