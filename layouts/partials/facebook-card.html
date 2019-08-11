@@ -1,0 +1,8 @@
+{{ with .Params.facebook }}
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{- .title -}}" />
+<meta property="og:description" content="{{- .title -}}" />
+<meta property="og:image" content="{{- .image -}}" />
+
+{{ end }}
