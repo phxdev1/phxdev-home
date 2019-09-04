@@ -30,6 +30,11 @@ sections:
     section_id: recent-posts
     title: Recent Posts
     type: postsblock
+  - component: content_block.html
+    content: >-
+      [![Netlify
+      Status](https://api.netlify.com/api/v1/badges/e95296ac-8cfb-41a1-bed6-a01c797078a9/deploy-status)](https://app.netlify.com/sites/phxdev-home-f012b/deploys)
+    type: contentblock
 menu:
   main:
     name: Home
