@@ -3,8 +3,8 @@
 <meta name="twitter:title" content="{{ .Title }}"/>
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
 <meta name="twitter:domain" content="phxdev.me"/>
-{{ with .thumb_img_path }}
-    <meta name="twitter:image" content="{{ . | absURL }}" />
+{{ if .thumb_img_path }}
+    <meta name="twitter:image" content="{{ .thumb_img_path | absURL }}" />
 {{ end }}
 
 <!--
