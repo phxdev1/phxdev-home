@@ -1,4 +1,4 @@
-{{ if .IsPage }}
+{{ if eq .Section "post" }}
   {{ with .Params.images }}
   <!-- Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:card" content="summary_large_image"/>
