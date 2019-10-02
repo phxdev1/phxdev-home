@@ -1,8 +1,8 @@
 {{ if eq .Section "post" }}
-    {{ if .Params.thumb_img_path }}
+    {{ if .Params.content_img_path }}
         <!-- Twitter summary card with large image must be at least 280x150px -->
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:image:src" content="{{ .Params.thumb_img_path }}"/>
+        <meta name="twitter:image:src" content="{{ .Params.content_img_path }}"/>
         <meta name="twitter:card" content="summary"/>
   {{ end }}
   <!-- Twitter Card data -->
