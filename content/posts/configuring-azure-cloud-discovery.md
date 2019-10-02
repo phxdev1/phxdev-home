@@ -1,6 +1,7 @@
 ---
 title: Configuring Azure Cloud Discovery
 date: 2019-10-02T18:00:29.792Z
+thumb_img_path: /images/microsoft-azure-cloud.png
 layout: post
 ---
 I really just need to save this for later, but I'm guessing some of you will have the same issues I have. It seems that the ServiceNow documentation is a little out of date when configuring the Azure Clouad Discovery. It seems as though the documentation found here is referencing some older terms which are now changed. Client ID is now called Application ID and Tenant ID is called Directory ID.
