@@ -1,5 +1,5 @@
 ---
-title: Configuring Azure Cloud Discovery
+title: Configuring Azure Cloud Discovery in ServiceNow
 date: 2019-10-02T18:00:29.792Z
 thumb_img_path: /images/microsoft-azure-cloud.png
 layout: post
