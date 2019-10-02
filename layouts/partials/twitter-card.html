@@ -3,7 +3,7 @@
 <meta name="twitter:title" content="{{ .Title }}"/>
 <meta name="twitter:description" content="{{ with .Params.Excerpt }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
 <meta name="twitter:domain" content="phxdev.me"/>
-{{ if .Params.content_img_path }}
+{{ if .Params.thumb_img_path }}
 <!-- Twitter summary card with large image must be at least 280x150px -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content='{{ apply .Params.thumb_img_path "absURL" "." }}'/>
