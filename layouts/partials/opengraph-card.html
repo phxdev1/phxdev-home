@@ -1,3 +1,5 @@
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:type" content="article" />
+{{ if .Params.thumb_img_path }}
 <meta property="og:image" content='https://phxdev.pw{{ .Params.thumb_img_path | absURL }}' />
+{{end}}
