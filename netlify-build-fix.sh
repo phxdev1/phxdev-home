@@ -7,7 +7,7 @@ HUGO_VERSION="0.47"
 
 echo "start netlify-build-fix.sh"
 echo "Hugo version: ${HUGO_VERSION}"
-exit 1
+
 [ -z "${NF_IMAGE_VERSION}" ] && exit 0
 
 rm -fr *.deb
