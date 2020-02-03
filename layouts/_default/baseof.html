@@ -8,9 +8,13 @@
         <meta name="google" content="notranslate" />
         {{ partial "opengraph-card.html" . }}
         {{ partial "twitter-card.html" . }}
-        <!-- {{ partial "facebook-card.html" . }} -->
+
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.css" . | resources.ToCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10)).Permalink }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css" integrity="sha256-ZKOGvp7YVwX26g2d0ooDvbSBQSEiIi4Bd9FuK+12Zk0=" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-1.11.0.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" integrity="sha256-bIPvSCQ7+G5GbIXDt2B+9AMpCmFtxTVLU+aWAIPzL8I=" crossorigin="anonymous"></script>
 
     </head>
     <body>
@@ -29,5 +33,8 @@
         <!-- Scripts -->
         <script src="{{ "assets/js/plugins.js" | relURL }}"></script>
         <script src="{{ "assets/js/main.js" | relURL }}"></script>
+
+        <script src="/js/photoswipe.after.html.js" type="text/javascript"></script>
+        <script src="/js/flickr.fetch.js" type="text/javascript"></script>
     </body> 
 </html>

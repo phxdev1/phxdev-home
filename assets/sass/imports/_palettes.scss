@@ -183,7 +183,7 @@
     }
   }
 
-  button,
+  button:not(.pswp__button),
   input[type="submit"],
   input[type="button"],
   input[type="reset"],

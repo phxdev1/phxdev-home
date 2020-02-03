@@ -1,5 +1,11 @@
 ---
 title: Photos
+menu:
+  main:
+    name: Photos
+    weight: 4
 layout: page
 ---
-{{% gallery folder="images/*.jpg" title="gallery" %}}
+{{< flickr-gallery >}}
+
+

@@ -1,5 +1,5 @@
 title: PhxDev | Mark Scott
-baseURL: /
+baseURL: https://phxdev.me/
 params:
   footer:
     content: '&copy; Mark Scott. All rights reserved.'
@@ -17,4 +17,4 @@ menu:
   main: []
 disableKinds:
   - RSS
-enableInlineShortcodes: true
+enableInlineShortcodes: false
