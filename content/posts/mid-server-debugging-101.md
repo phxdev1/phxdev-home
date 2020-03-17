@@ -1,8 +1,5 @@
 ---
 title: MID Server Debugging 101
-subtitle: >-
-  Having issues with your MID Server? Here is a list of things I check when I
-  encounter issues!
 date: 2020-03-16T23:32:05.336Z
 thumb_img_path: /images/screen_2x.jpg
 layout: post
