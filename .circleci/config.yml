@@ -1,10 +1,13 @@
 jobs:
   deploy:
+    executor: node
     steps:
       - checkout
       # Attach the pesisted built files.
       - attach_workspace:
           at: ./
+      - <<: *restore_cache
+      - <<: *install_node_modules
       - run:
           name: Install netlify-cli
           command: sudo npm install -g --silent netlify-cli
