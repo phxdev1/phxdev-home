@@ -1,6 +1,5 @@
 jobs:
   deploy:
-    executor: node
     steps:
       - checkout
       # Attach the pesisted built files.
