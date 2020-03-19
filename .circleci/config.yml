@@ -1,3 +1,20 @@
+jobs:
+  deploy:
+    executor: node
+    steps:
+      - checkout
+      # Attach the pesisted built files.
+      - attach_workspace:
+          at: ./
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - run:
+          name: Install netlify-cli
+          command: sudo npm install -g --silent netlify-cli
+      - run:
+          name: Deploy to Netlify
+          command: netlify deploy --dir=./public -p
+
 orbs:
   hugo: circleci/hugo@0.1
 version: 2.1
@@ -7,3 +24,9 @@ workflows:
       - hugo/build:
           html-proofer: true
           version: '0.55'
+      - deploy:
+          filters:
+            branches:
+              only: master
+          requires:
+            - hugo/build
