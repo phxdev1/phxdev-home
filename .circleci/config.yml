@@ -1,3 +1,11 @@
+executors:
+  node:
+    parameters:
+      image:
+        type: string
+        default: "10"
+    docker:
+    - image: circleci/node:<< parameters.image >>
 jobs:
   deploy:
     executor: node
