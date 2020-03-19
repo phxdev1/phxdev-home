@@ -24,7 +24,7 @@ The MID Server is really the workhorse of the ServiceNow platform. "Used and abu
 
 ## 5. Are Discovery Scans/Orchestration jobs finishing completely?
 
-The last thing you need is a GIANT scan that runs and doesn't finish. This would then overlap to the next interval when the scan runs. Make sure you're completely finishing scans by making sure they are spaced far enough apart. My friend [Jace Benson](jace.pro) had this EXACT issue not too long ago. His scans where hitting the maximum runtime and canceling out. But it only presented itself when his MID Servers reported themselves has being down.
+The last thing you need is a GIANT scan that runs and doesn't finish. This would then overlap to the next interval when the scan runs. Make sure you're completely finishing scans by making sure they are spaced far enough apart. My friend [Jace Benson](https://jace.pro) had this EXACT issue not too long ago. His scans where hitting the maximum runtime and canceling out. But it only presented itself when his MID Servers reported themselves has being down.
 
 ![](/images/mid-server-debugging-with-jace.png "MID Server Debugging in the SNDevs Slack Channel")
 
