@@ -3,6 +3,6 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{- .title -}}" />
 <meta property="og:description" content="{{- .title -}}" />
-<meta property="og:image" content="{{- .image -}}" />
+<meta property="og:image" content="{{ .Params.thumb_img_path | absURL }}'" />
 
 {{ end }}
