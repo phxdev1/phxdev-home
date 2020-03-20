@@ -36,15 +36,3 @@ workflows:
               only: master
           requires:
             - hugo/build
-          executor: node
-          steps:
-            - checkout
-            # Attach the pesisted built files.
-            - attach_workspace:
-              at: ./
-            - run:
-              name: Install netlify-cli
-              command: sudo npm install -g --silent netlify-cli
-            - run:
-                name: Deploy to Netlify
-                command: netlify deploy --dir=./public -p
