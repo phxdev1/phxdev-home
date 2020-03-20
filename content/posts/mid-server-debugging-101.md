@@ -3,6 +3,7 @@ title: MID Server Debugging 101
 date: 2020-03-16T23:32:05.336Z
 thumb_img_path: /images/screen_2x.jpg
 layout: post
+summary: A handy field guide for debugging MID Servers! 
 ---
 Having issues with your ServiceNow MID Server and don't know where to start? Here is a handy field list for debugging MID Server problems:
 
