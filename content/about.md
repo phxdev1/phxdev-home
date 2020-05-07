@@ -21,9 +21,4 @@ His other passion projects include home automation, 3D printing, and [removing d
 
 
 
-<iframe id="sn_va_web_client"
-    title="ServiceNow Virtual Agent Client"
-    width="600"
-    height="900"
-    src="https://dev88493.service-now.com/sn_va_web_client_app_embed.do">
-</iframe>
+

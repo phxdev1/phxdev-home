@@ -14,7 +14,9 @@
         <script src="https://code.jquery.com/jquery-1.11.0.js" type="text/javascript"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" integrity="sha256-bIPvSCQ7+G5GbIXDt2B+9AMpCmFtxTVLU+aWAIPzL8I=" crossorigin="anonymous"></script>
-
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script src="https://kit.fontawesome.com/69b4fa832e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         
@@ -24,11 +26,46 @@
             <div class="inner">
               <main id="main" class="site-main">
                 {{ block "content" . }}{{ end }}
+
               </main><!-- .site-main -->
               {{ partial "footer.html" . }}
             </div><!-- .inner -->
           </div><!-- .site-content -->
         </div><!-- .site -->
+        <!--Chat bot stuff-->
+        <style>
+          .app-fab--absolute {
+            position: fixed;bottom: 1rem;right: 1rem;
+            background-color: #fc6e51;
+          }
+        
+          @media(min-width: 1024px) {
+            .app-fab--absolute {
+              bottom: 1.5rem;
+              right: 1.5rem;
+            }
+          }
+        </style>
+        <div style="position: fixed;bottom: 4rem;right: 3rem;">
+          <div style="display:none;" id="chatBot">
+            <iframe id="sn_va_web_client" title="ServiceNow Virtual Agent Client" width="400" height="600" style="border:0;box-shadow:3px 3px 3px #CCC;"
+              src="https://dev88493.service-now.com/sn_va_web_client_app_embed.do">
+            </iframe>
+          </div>
+        
+        
+          <button class="mdc-fab app-fab--absolute" aria-label="Favorite" onclick="toggleChatBot()">
+            <span class="mdc-fab__icon material-icons"><i class="fas fa-comment-dots"></i></span>
+          </button>
+        </div>
+        
+        <script>
+          
+          function toggleChatBot(){
+            $("#chatBot").toggle();
+          }
+        </script>
+        <!-- END Chat bot stuff-->
         <!-- Scripts -->
         <script src="{{ "assets/js/plugins.js" | relURL }}"></script>
         <script src="{{ "assets/js/main.js" | relURL }}"></script>
