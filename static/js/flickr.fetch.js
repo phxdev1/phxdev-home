@@ -34,7 +34,7 @@ var prepareFlickrAlbum = function (album_id, destination_id, max_pictures, row_h
 			api_key: '92da12e7f9430472a8ce2276d8bfb3e5',
 			format: 'json',
 			photoset_id: album_id,
-			extras: "o_dims, url_k, url_s, url_m, url_o, url_t,url_q,url_n,url_z,url_c,url_l",
+			extras: "o_dims, url_k, url_s, url_m, url_o, url_t,url_q,url_n,url_z,url_c,url_l,date_upload",
 			per_page: max_pictures,
 		},
 		dataType: 'json',
@@ -53,8 +53,9 @@ var prepareFlickrAlbum = function (album_id, destination_id, max_pictures, row_h
 	});
 }
 
-var showPhotos = function (photos, destination_id, row_height, margin) {
+var showPhotos = function (unsorted_photos, destination_id, row_height, margin) {
 $(destination_id).html('');
+const photos = unsorted_photos.slice().sort((a, b) => b.dateupload - a.dateupload);
 	for (var index in photos) {
 		var photo = photos[index];
 		var htmlString = "";
