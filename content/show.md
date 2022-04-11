@@ -1,0 +1,4 @@
+---
+title: Show
+layout: page
+---
