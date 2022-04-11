@@ -1,5 +1,5 @@
 ---
-title: Show
+title: The PhxDev Show
 menu:
   main:
     name: The PhxDev Show
