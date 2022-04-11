@@ -18,3 +18,7 @@ menu:
 disableKinds:
   - RSS
 enableInlineShortcodes: false
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
