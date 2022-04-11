@@ -1,5 +1,7 @@
 ---
 title: The PhxDev Show
+subtitle: Join me Fridays at 5:30pm PDT as I talk about ServiceNow topics,
+  development and anything else that piques my interest!
 menu:
   main:
     name: The PhxDev Show
