@@ -11,4 +11,4 @@ publish = "public"
  [[ redirects ]]
   from = "/twitter"
   to = "https://twitter.com/phxdev"
-  status = 200
+  status = 300
