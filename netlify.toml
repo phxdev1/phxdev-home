@@ -1,2 +1,6 @@
 [build]
 publish = "public"
+[[ redirects ]]
+  from = "/youtube"
+  to = "https://www.youtube.com/phxdev"
+  status = 301
