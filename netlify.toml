@@ -4,3 +4,11 @@ publish = "public"
   from = "/youtube"
   to = "https://www.youtube.com/phxdev"
   status = 301
+[[ redirects ]]
+  from = "/linkedin"
+  to = "https://www.linkedin.com/in/phxdev/"
+  status = 301
+ [[ redirects ]]
+  from = "/twitter"
+  to = "https://twitter.com/phxdev"
+  status = 301
