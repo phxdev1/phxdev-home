@@ -15,4 +15,3 @@ publish = "public"
 [[redirects]]
   from = "/links"
   to = "https://beacons.ai/phxdev"
-  status = 200
