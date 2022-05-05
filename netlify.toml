@@ -14,5 +14,5 @@ publish = "public"
   status = 300
 [[redirects]]
   from = "/links"
-  to = "http://beacons.ai/phxdev"
+  to = "https://developer.servicenow.com"
   status = 200
