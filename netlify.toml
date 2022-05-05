@@ -16,7 +16,3 @@ publish = "public"
   from = "/links"
   to = "https://beacons.ai/phxdev"
   status = 200
-[[redirects]]
-  from = "/test"
-  to = "https://developer.servicenow.com"
-  status = 200
