@@ -12,3 +12,7 @@ publish = "public"
   from = "/twitter"
   to = "https://twitter.com/phxdev"
   status = 300
+[[redirects]]
+  from = "/links"
+  to = "http://beacons.ai/phxdev"
+  status = 200
