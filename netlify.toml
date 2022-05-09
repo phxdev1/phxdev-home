@@ -18,8 +18,8 @@ publish = "public"
 [[redirects]]
   from = "/15"
   to = "https://calendly.com/phxdev/15"
-  status = 200
+  status = 300
 [[redirects]]
   from = "/30"
   to = "https://calendly.com/phxdev/30"
-  status = 200
+  status = 300
