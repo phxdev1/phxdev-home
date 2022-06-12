@@ -14,7 +14,8 @@ publish = "public"
   status = 300
 [[redirects]]
   from = "/links"
-  to = "https://beacons.ai/phxdev"
+  to = "https://linqapp.com/phxdev"
+  status = 301
 [[redirects]]
   from = "/15"
   to = "https://calendly.com/phxdev/15"
