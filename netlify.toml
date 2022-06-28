@@ -24,3 +24,7 @@ publish = "public"
   from = "/30"
   to = "https://calendly.com/phxdev/30"
   status = 301
+[[redirects]]
+  from = "/resources/themepark_api"
+  to = "https://steel-wiry-dogwood.glitch.me/"
+  status = 200
