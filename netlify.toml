@@ -25,6 +25,13 @@ publish = "public"
   to = "https://calendly.com/phxdev/30"
   status = 301
 [[redirects]]
-  from = "/resources/themepark_api/*"
+  from = "/resources/themeparks/api/*"
   to = "https://steel-wiry-dogwood.glitch.me/:splat"
   status = 200
+ [[redirects]]
+  from = "/resources/themeparks/docs/*"
+  to = "https://phxdev-themeparks.readme.io/docs:splat"
+  status = 200
+  
+  
+  
