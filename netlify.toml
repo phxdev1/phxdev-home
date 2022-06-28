@@ -30,7 +30,7 @@ publish = "public"
   status = 200
  [[redirects]]
   from = "/resources/themeparks/docs/*"
-  to = "https://phxdev-themeparks.readme.io/docs:splat"
+  to = "https://phxdev-themeparks.readme.io/:splat"
   status = 200
   
   
