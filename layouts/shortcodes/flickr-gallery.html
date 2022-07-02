@@ -1,8 +1,8 @@
 
-<div class="image-container" id="images1" itemscope="" itemtype="http://schema.org/ImageGallery" data-pswp-uid="1"></div>
+<div class="image-container" id="flickr-images" itemscope="" itemtype="http://schema.org/ImageGallery" data-pswp-uid="1"></div>
 <script type="text/javascript">
     $(document).ready(function(){
-          prepareFlickrAlbum("72157712178490693", "images1", {{ .Get "count" }});
+          prepareFlickrAlbum({{ .Get "album_id" }}, "flickr-images", {{ .Get "count" }});
     });
 
 </script>
