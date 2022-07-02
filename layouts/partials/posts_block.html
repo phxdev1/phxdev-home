@@ -7,7 +7,7 @@
     <article class="post">
       <div class="post-inside">
         {{ if $post.Params.thumb_img_path }}
-        <a class="post-thumbnail" href="{{ $post.URL }}"><img class="thumbnail"
+        <a class="post-thumbnail" href="{{ $post.URL }}" target="_self"><img class="thumbnail"
             src="{{ $post.Params.thumb_img_path | relURL }}" alt="{{ $post.Params.title }}" /></a>
         {{ end }}
         <header class="post-header">
