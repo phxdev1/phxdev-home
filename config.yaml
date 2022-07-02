@@ -2,14 +2,23 @@ title: PhxDev | Mark Scott
 baseURL: https://phxdev.me/
 params:
   footer:
-    content: '&copy; Mark Scott. All rights reserved.'
-    links: []
+    content: "&copy; Mark Scott. All rights reserved."
+    links:
+      - new_window: true
+        text: Twitter
+        url: https://twitter.com/phxdev
+      - new_window: true
+        text: YouTube
+        url: https://youtube.com/c/phxdev
+      - new_window: true
+        text: LinkedIn
+        url: https://www.linkedin.com/in/phxdev/
   header:
     bg: dark
     has_nav: true
     has_social: true
     profile_img: /images/20190312_122408-removebg.png
-    tagline: 'I drink beer, I write code.'
+    tagline: I drink beer, I write code.
     title: PhxDev
   layout_style: overflow
   palette: orange
