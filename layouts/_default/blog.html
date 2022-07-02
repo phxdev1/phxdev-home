@@ -11,7 +11,7 @@
         </a>
         {{ end }}
         <header class="post-header">
-          <h2 class="post-title"><a href="{{ $post.URL }}" rel="bookmark">{{ $post.Params.title }}</a></h2>
+          <h2 class="post-title"><a href="{{ $post.URL }}" target="_self" rel="bookmark">{{ $post.Params.title }}</a></h2>
         </header><!-- .post-header -->
         <div class="post-content">
           <p>{{ $post.Params.excerpt }}</p>
