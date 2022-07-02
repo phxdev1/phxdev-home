@@ -34,7 +34,7 @@ var prepareFlickrAlbum = function (album_id, destination_id, max_pictures, row_h
 			api_key: '92da12e7f9430472a8ce2276d8bfb3e5',
 			format: 'json',
 			photoset_id: album_id,
-			extras: "o_dims, url_k, url_s, url_m, url_o, url_t,url_q,url_n,url_z,url_c,url_l,date_taken_desc",
+			extras: "o_dims, url_k, url_s, url_m, url_o, url_t,url_q,url_n,url_z,url_c,url_l,date_taken",
 			per_page: max_pictures,
 		},
 		dataType: 'json',
