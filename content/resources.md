@@ -6,4 +6,4 @@ menu:
     weight: 3
 layout: page
 ---
-{{< youtube id="f5YP1mrEJ0E" start="542" >}}
+{{< youtube id="f5YP1mrEJ0E" start="542" end="600">}}
