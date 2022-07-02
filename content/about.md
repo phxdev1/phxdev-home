@@ -8,16 +8,16 @@ menu:
     weight: 4
 layout: page
 ---
-**Mark Scott** is Software Architect from Phoenix, Arizona. He currently builds innovative solutions for the Now Learning platform at [ServiceNow ](https://servicenow.com) In addition to his work on the ServiceNow platform, Mark started his career as a developer in the C#/ASP.NET space building full stack applications and APIs. His current technology interests include:
+Hey everybody! I'm Mark Scott. I'm a Solution Architect from Phoenix, Arizona. I currently help build innovative solutions for the Now Learning platform at [ServiceNow ](https://servicenow.com). I started my career as a s full stack, C#/ASP.NET space building applications and APIs for my clients. My current interests include but are not limited to:
 
-* ServiceNow
+* Breaking ServiceNow
 * NodeJS
-* JAMStack
 * Hugo
-* AWS Lambda
 * Collecting CI/CD tools
+* Live streaming and content creation
 
-His other passion projects include home automation, 3D printing, and [removing daily cognitive load](https://hackernoon.com/minimizing-the-cognitive-load-in-your-life-bc14f4309fb2) from his life.
+My other passion projects include home automation, 3D printing, and [removing daily cognitive load](https://hackernoon.com/minimizing-the-cognitive-load-in-your-life-bc14f4309fb2) from my life!
+
 
 
 
