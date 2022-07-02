@@ -1,9 +1,6 @@
 ---
 title: Home
 sections:
-  - component: content_block.html
-    image: /images/logo_w_background.jpg
-    type: contentblock
   - actions:
       - label: View Blog
         url: blog/index.html
@@ -18,4 +15,3 @@ menu:
     weight: 1
 layout: home
 ---
-
