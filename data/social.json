@@ -19,10 +19,9 @@
       "url": "https://github.com/phxdev1"
     },
     {
-      "type": "instagram",
-      "title": "Instagram",
-      "icon": "fa-instagram",
-      "url": "https://www.instagram.com/phxdev"
+      "icon": "youtube",
+      "url": "https://youtube.com/c/phxdev",
+      "title": "youtube"
     }
   ]
 }
