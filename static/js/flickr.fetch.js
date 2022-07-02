@@ -58,21 +58,8 @@ $(destination_id).html('');
 	
 const photos = unsorted_photos.slice().sort(
 	function(a,b){
-  		// Turn your strings into dates, and then subtract them
-  		// to get a value that is either negative, positive, or zero.
-		var primary, secondary = null;
-		if(a.datetakenunknown){
-			primary = new Date(a.dateupload);	
-		}else{
-			primary = new Date(a.datetaken)	
-		}
-		
-		if(b.datetakenunknown){
-			secondary = new Date(b.dateupload);
-		}else{
-			secondary = new Date(b.datetaken);
-		}
-  		return secondary - primary;
+  		
+  		return new Date(b.datetaken) - new Date(a.datetaken);
 	}
 );
 	console.log(photos);
