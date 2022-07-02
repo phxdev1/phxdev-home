@@ -56,7 +56,13 @@ var prepareFlickrAlbum = function (album_id, destination_id, max_pictures, row_h
 var showPhotos = function (unsorted_photos, destination_id, row_height, margin) {
 $(destination_id).html('');
 	
-const photos = unsorted_photos.slice().sort((a, b) => a.datetaken.getTime()-b.datetaken.getTime());
+const photos = unsorted_photos.slice().sort(
+	function(a,b){
+  		// Turn your strings into dates, and then subtract them
+  		// to get a value that is either negative, positive, or zero.
+  		return new Date(b.datetaken) - new Date(a.datetaken);
+	}
+);
 	console.log(photos);
 	for (var index in photos) {
 		var photo = photos[index];
