@@ -34,7 +34,7 @@ var prepareFlickrAlbum = function (album_id, destination_id, max_pictures, row_h
 			api_key: '92da12e7f9430472a8ce2276d8bfb3e5',
 			format: 'json',
 			photoset_id: album_id,
-			extras: "o_dims, url_k, url_s, url_m, url_o, url_t,url_q,url_n,url_z,url_c,url_l,date_taken",
+			extras: "o_dims, url_k, url_s, url_m, url_o, url_t,url_q,url_n,url_z,url_c,url_l,date_taken,date_upload",
 			per_page: max_pictures,
 		},
 		dataType: 'json',
@@ -60,7 +60,19 @@ const photos = unsorted_photos.slice().sort(
 	function(a,b){
   		// Turn your strings into dates, and then subtract them
   		// to get a value that is either negative, positive, or zero.
-  		return new Date(b.datetaken) - new Date(a.datetaken);
+		var primary, secondary = null;
+		if(a.datetakenunknown){
+			primary = new Date(a.dateupload);	
+		}else{
+			primary = new Date(a.datetaken)	
+		}
+		
+		if(b.datetakenunknown){
+			secondary = new Date(b.dateupload);
+		}else{
+			secondary = new Date(b.datetaken);
+		}
+  		return secondary - primary;
 	}
 );
 	console.log(photos);
