@@ -11,7 +11,7 @@
             src="{{ $post.Params.thumb_img_path | relURL }}" alt="{{ $post.Params.title }}" /></a>
         {{ end }}
         <header class="post-header">
-          <h3 class="post-title"><a href="{{ $post.URL }}" rel="bookmark">{{ $post.Params.title }}</a></h3>
+          <h3 class="post-title"><a href="{{ $post.URL }}" target="_self" rel="bookmark">{{ $post.Params.title }}</a></h3>
         </header>
         <div class="post-content">
           <p>{{ $post.Params.excerpt }}</p>
@@ -27,7 +27,7 @@
   {{ if .section.actions }}
   <p class="block-cta">
     {{ range $action := .section.actions }}
-    <a href="{{ $action.url | relURL }}" class="button">{{ $action.label }}</a>
+    <a href="{{ $action.url | relURL }}" target="_self" class="button">{{ $action.label }}</a>
     {{ end }}
   </p><!-- .block-cta -->
   {{ end }}
