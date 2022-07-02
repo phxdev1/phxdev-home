@@ -6,4 +6,4 @@ menu:
     weight: 4
 layout: page
 ---
-{{< flickr-gallery >}}
+{{< flickr-gallery count="10" >}}
