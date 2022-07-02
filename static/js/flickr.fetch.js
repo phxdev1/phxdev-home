@@ -56,7 +56,7 @@ var prepareFlickrAlbum = function (album_id, destination_id, max_pictures, row_h
 var showPhotos = function (unsorted_photos, destination_id, row_height, margin) {
 $(destination_id).html('');
 	console.log(unsorted_photos);
-const photos = unsorted_photos.slice().sort((a, b) => b.dateupload - a.dateupload);
+const photos = unsorted_photos.slice().sort((a, b) => b.datetaken - a.datetaken);
 	for (var index in photos) {
 		var photo = photos[index];
 		var htmlString = "";
