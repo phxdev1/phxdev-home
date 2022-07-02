@@ -1,11 +1,22 @@
-<div class="video-wrapper" data-streaming="youtube" data-videoid="{{.Get "id"}}" >
-	<i class="icon-video-play-button shortcode"></i>
-	{{if (.Get "thumbnail")}}
-	<div style="background-image:url(/images/thumbnails/{{.Get "thumbnail"}})" alt="YouTube Thumbnail" class="video-thumbnail"></div>
-	{{else}}
-	<div style="background-image:url(//img.youtube.com/vi/{{.Get "id"}}/0.jpg)" alt="YouTube Thumbnail" class="video-thumbnail"></div>
-	{{end}}
+<style>
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<div class='embed-container'>
+  <iframe src='https://www.youtube.com/embed/{{ if .Get "id" }}{{ .Get "id" }}{{ else }}QILiHiTD3uc{{ end }}' frameborder='0' allowfullscreen></iframe>
 </div>
-{{ if (.Get "description") }}
-<div class="video-description">{{ .Get "description" | markdownify }}</div>
-{{ end }}
