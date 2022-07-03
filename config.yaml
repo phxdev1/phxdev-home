@@ -17,7 +17,7 @@ params:
     bg: dark
     has_nav: true
     has_social: true
-    profile_img: /images/20190312_122408-removebg.png
+    profile_img: /images/headshot.webp
     tagline: I drink beer, I write code.
     title: PhxDev
   layout_style: overflow
