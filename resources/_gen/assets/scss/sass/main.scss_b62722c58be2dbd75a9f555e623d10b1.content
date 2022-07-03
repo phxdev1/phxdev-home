@@ -1153,8 +1153,9 @@ img {
     font-size: 11px;
     letter-spacing: 0.09em;
     line-height: 1.5;
-    margin-bottom: 0;
-    text-transform: uppercase; }
+    margin: 0px auto;
+    text-transform: uppercase;
+    text-align: center; }
   .site-footer .to-top {
     border: 0;
     color: #555e69;
