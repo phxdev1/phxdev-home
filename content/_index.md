@@ -4,7 +4,7 @@ sections:
   - type: contentblock
     component: content_block.html
     content: ""
-    image: /images/website_banner.png
+    image: /images/website_banner.webp
   - actions:
       - label: View Blog
         url: blog/index.html
