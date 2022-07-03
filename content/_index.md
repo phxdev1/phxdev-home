@@ -3,7 +3,7 @@ title: Home
 sections:
   - type: contentblock
     component: content_block.html
-    content: ">"
+    content: ""
     image: /images/website_banner.png
   - actions:
       - label: View Blog
