@@ -1,6 +1,10 @@
 ---
 title: Home
 sections:
+  - type: contentblock
+    component: content_block.html
+    content: ">"
+    image: /images/website_banner.png
   - actions:
       - label: View Blog
         url: blog/index.html
