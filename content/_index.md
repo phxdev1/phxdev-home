@@ -3,8 +3,8 @@ title: Home
 sections:
   - type: contentblock
     component: content_block.html
-    content: ""
-    image: /images/website_banner.webp
+    content: <img src="/images/website_banner.webp" alt="" width="1280" height="720">
+    image: ""
 menu:
   main:
     name: Home
