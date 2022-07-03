@@ -4,7 +4,7 @@ subtitle: What do fish tanks, BBQ and Flow Designer have in common? In this post
   I explore why we need to stop writing code so we can make our projects more
   maintainable for the low-code, no-code crowd.
 date: 2020-07-11T01:59:29.735Z
-thumb_img_path: /images/thumb-believable-tank.png
+thumb_img_path: /images/thumb-believable-tank-min.png
 layout: post
 ---
 # Stop writing code!
