@@ -11,9 +11,9 @@
         <link href="/assets/css/roboto.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.css" . | resources.ToCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10)).Permalink }}">
         <link rel="stylesheet" href="/assets/css/justifiedGallery.min.css"/>
-        <script src="/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-        <script src="/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-        <script src="/js/jquery.justifiedGallery.min.js" type="text/javascript"></script>
+        <script src="/js/jquery-1.11.0.min.js" type="text/javascript" defer></script>
+        <script src="/js/jquery-migrate-1.2.1.min.js" type="text/javascript" defer></script>
+        <script src="/js/jquery.justifiedGallery.min.js" type="text/javascript" defer></script>
         <base target="_blank"/>
     </head>
     <body>

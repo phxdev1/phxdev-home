@@ -1,9 +1,10 @@
 
 <div class="image-container" id="flickr-images" itemscope="" itemtype="http://schema.org/ImageGallery" data-pswp-uid="1"></div>
 <script type="text/javascript">
-    $(document).ready(function(){
-          prepareFlickrAlbum({{ .Get "album_id" }}, "flickr-images", {{ .Get "count" }});
-    });
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    prepareFlickrAlbum({{ .Get "album_id" }}, "flickr-images", {{ .Get "count" }});
+});
 
 </script>
 
