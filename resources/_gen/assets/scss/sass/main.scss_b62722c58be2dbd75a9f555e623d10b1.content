@@ -1299,7 +1299,7 @@ img {
   color: #9371e6; }
 
 .palette-orange a {
-  border-color: #fc6e51; }
+  border-color: #F2594B; }
   .palette-orange a:hover {
     border-color: currentColor; }
 
@@ -1308,8 +1308,8 @@ img {
 .palette-orange input[type="button"],
 .palette-orange input[type="reset"],
 .palette-orange a.button {
-  background: #fc6e51;
-  border-color: #fc6e51; }
+  background: #F2594B;
+  border-color: #F2594B; }
   .palette-orange button:not(.pswp__button):hover, .palette-orange button:not(.pswp__button):focus, .palette-orange button:not(.pswp__button):active,
   .palette-orange input[type="submit"]:hover,
   .palette-orange input[type="submit"]:focus,
@@ -1324,40 +1324,40 @@ img {
   .palette-orange a.button:focus,
   .palette-orange a.button:active {
     background: 0;
-    box-shadow: 0 0 1px 7px rgba(252, 110, 81, 0.2); }
+    box-shadow: 0 0 1px 7px rgba(242, 89, 75, 0.2); }
 
 .palette-orange a.button.circle {
   background: transparent; }
   .palette-orange a.button.circle:hover, .palette-orange a.button.circle:focus, .palette-orange a.button.circle:active {
-    background: #fc6e51; }
+    background: #F2594B; }
 
 .palette-orange .underline:after {
-  border-color: #fc6e51; }
+  border-color: #F2594B; }
 
 .palette-orange .profile .avatar {
-  border-color: #fc6e51;
-  box-shadow: 0 0 1px 7px rgba(252, 110, 81, 0.2); }
+  border-color: #F2594B;
+  box-shadow: 0 0 1px 7px rgba(242, 89, 75, 0.2); }
   @media only screen and (min-width: 801px) {
     .palette-orange .profile .avatar {
-      box-shadow: 0 0 1px 11px rgba(252, 110, 81, 0.2); } }
+      box-shadow: 0 0 1px 11px rgba(242, 89, 75, 0.2); } }
 .palette-orange .menu-item a:hover,
 .palette-orange .current-menu-item a {
-  color: #fc6e51; }
+  color: #F2594B; }
 
 .palette-orange .social-links a {
   border-color: #e9ebed; }
   .palette-orange .social-links a:hover {
-    background: #fc6e51;
-    border-color: #fc6e51;
-    box-shadow: 0 0 1px 5px rgba(252, 110, 81, 0.2); }
+    background: #F2594B;
+    border-color: #F2594B;
+    box-shadow: 0 0 1px 5px rgba(242, 89, 75, 0.2); }
 
 .palette-orange .dark .social-links a {
   border-color: #555e69; }
   .palette-orange .dark .social-links a:hover {
-    border-color: #fc6e51; }
+    border-color: #F2594B; }
 
 .palette-orange .post-title a:hover {
-  color: #fc6e51; }
+  color: #F2594B; }
 
 body.has-theme-bar #masthead {
   top: 60px; }
