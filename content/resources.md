@@ -8,7 +8,7 @@ layout: page
 ---
 ## [News.Jace.Pro](https://news.jace.pro)
 
-{{< tenor url="https://tenor.com/view/news-always-sunny-its-in-gif-20196102" width="33%" float="left" >}}[Jace Benson](https://www.linkedin.com/in/jacebenson/) has built an AWESOME ServiceNow news aggregation service. If it's being talked about in the ServiceNow ecosystem, Jace has probably covered it! He also has a weekly newscast if reading it isn't your thing!
+{{< tenor link="https://tenor.com/view/news-always-sunny-its-in-gif-20196102" width="33%" float="left" >}}[Jace Benson](https://www.linkedin.com/in/jacebenson/) has built an AWESOME ServiceNow news aggregation service. If it's being talked about in the ServiceNow ecosystem, Jace has probably covered it! He also has a weekly newscast if reading it isn't your thing!
 
 ## [SNUtils](https://www.arnoudkooi.com/)
 
@@ -16,7 +16,7 @@ If you haven't checked out SNUtils by the fantastic Arnoud Kooi, you're probably
 
 ## [ServiceNow Interview Questions](https://phxdev.me/docs/ServiceNow%20Interview%20Questions.pdf)
 
-{{< tenor url="https://tenor.com/view/funny-interview-gif-24037434" width="33%" float="right" >}}Looking to get your start in ServiceNow? Not sure what might be asked of you? Look no further than the PhxDev Interview Question document! It's a PDF for your reading pleasure. Make flashcards, make copies for your friends, whatever you need, it's all yours! PS: If you think of any questions, [let me know](/contact)!
+{{< tenor link="https://tenor.com/view/funny-interview-gif-24037434" width="33%" float="right" >}}Looking to get your start in ServiceNow? Not sure what might be asked of you? Look no further than the PhxDev Interview Question document! It's a PDF for your reading pleasure. Make flashcards, make copies for your friends, whatever you need, it's all yours! PS: If you think of any questions, [let me know](/contact)!
 
 ## [REST in IntegrationHub - ServiceNow Developer](https://developer.servicenow.com/dev.do#!/learn/courses/quebec/app_store_learnv2_rest_quebec_rest_integrations/app_store_learnv2_rest_quebec_rest_in_integrationhub/app_store_learnv2_rest_quebec_rest_in_integrationhub_objectives)
 
