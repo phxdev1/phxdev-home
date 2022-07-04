@@ -30,7 +30,7 @@ This is THE Javascript guide! If you're just starting out, [Chuck Tomasi](https:
 
 ## [Netlify](https://netlify.com)
 
-{{< tenor link="carl-chef-kiss-delicious-the-simpsons-al-bacio-gif-7851132" width="25%" float="left" >}}
+{{< tenor link="https://tenor.com/view/carl-chef-kiss-delicious-the-simpsons-al-bacio-gif-7851132" width="25%" float="left" >}}
 
  Netlify does webhosting. But they do it better than anybody else. It's CI/CD driven so you can instantly deploy changes as you go. It's got a native GitHub integration which makes setup a breeze. Did I mention it's also got a distributed CDN, domain manager, and build checking tools? Oh and it's free if you're deploying static sites (like Hugo)! Honestly, it's amazing. This site is hosted there! 
 
