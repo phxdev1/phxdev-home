@@ -26,8 +26,7 @@ If you're looking for a step by step guide to get up and running with integratio
 
 This is THE Javascript guide! If you're just starting out, [Chuck Tomasi](https://www.chucktomasi.com/) will shape you into a master! This series covers everything you need to start writing scripts on the platform!
 
-
-{{< youtube id="https://www.youtube.com/watch?v=62Nabpb94Jw" >}}
+{{< youtube id="62Nabpb94Jw" >}}
 
 ## [Netlify](https://netlify.com)
 
