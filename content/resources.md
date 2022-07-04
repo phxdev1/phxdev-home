@@ -24,3 +24,9 @@ If you're looking for a step by step guide to get up and running with integratio
 ## [Learn Javascript On the Now Platform](https://www.youtube.com/watch?v=62Nabpb94Jw&list=PL3rNcyAiDYK2_87aRvXEmAyD8M9DARVGK)
 This is THE Javascript guide! If you're just starting out, [Chuck Tomasi](https://www.chucktomasi.com/) will shape you into a master! This series covers everything you need to start writing scripts on the platform!
 {{< youtube id="62Nabpb94Jw" >}}
+
+## [Netlify](https://netlify.com)
+Netlify does webhosting. But they do it better than anybody else. It's CI/CD driven so you can instantly deploy changes as you go. It's got a native GitHub integration which makes setup a breeze. Did I mention it's also got a distributed CDN, domain manager, and build checking tools? Oh and it's free if you're deploying static sites (like Hugo)! Honestly, it's amazing. This site is hosted there!
+
+## [Hugo](https://gohugo.io)
+If you're looking to deploy a static site (think one not dependent on a database), look no further than Hugo. It's what's building this site in less than one minute and once built, the pages are served up in sub second time. It uses markdown to create pages and posts. Then the markdown files are committed to a git branch and the site rebuilds. Automagically! It's really easy to use and honestly pretty bullet proof once you're up and running!
