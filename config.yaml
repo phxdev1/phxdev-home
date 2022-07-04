@@ -2,7 +2,7 @@ title: PhxDev | Mark Scott
 baseURL: https://phxdev.me/
 params:
   footer:
-    content: "Mark Scott. All rights reserved. <br/>"
+    content: "&copy; Mark Scott. All rights reserved. <br/> {{<year>}}"
     links:
       - new_window: true
         text: Twitter
