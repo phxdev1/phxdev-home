@@ -26,7 +26,7 @@ This is THE Javascript guide! If you're just starting out, [Chuck Tomasi](https:
 {{< youtube id="62Nabpb94Jw" >}}
 
 ## [Netlify](https://netlify.com)
-{{< tenor url="https://tenor.com/view/carl-chef-kiss-delicious-the-simpsons-al-bacio-gif-7851132" width="25%" float="left">}} Netlify does webhosting. But they do it better than anybody else. It's CI/CD driven so you can instantly deploy changes as you go. It's got a native GitHub integration which makes setup a breeze. Did I mention it's also got a distributed CDN, domain manager, and build checking tools? Oh and it's free if you're deploying static sites (like Hugo)! Honestly, it's amazing. This site is hosted there! 
+{{< tenor url="https://tenor.com/view/carl-chef-kiss-delicious-the-simpsons-al-bacio-gif-7851132" width="25%" float="left" >}} Netlify does webhosting. But they do it better than anybody else. It's CI/CD driven so you can instantly deploy changes as you go. It's got a native GitHub integration which makes setup a breeze. Did I mention it's also got a distributed CDN, domain manager, and build checking tools? Oh and it's free if you're deploying static sites (like Hugo)! Honestly, it's amazing. This site is hosted there! 
 
 ## [Hugo](https://gohugo.io)
 If you're looking to deploy a static site (think one not dependent on a database), look no further than Hugo. It's what's building this site in less than one minute and once built, the pages are served up in sub second time. It uses markdown to create pages and posts. Then the markdown files are committed to a git branch and the site rebuilds. Automagically! It's really easy to use and honestly pretty bullet proof once you're up and running!
