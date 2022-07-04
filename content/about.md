@@ -20,4 +20,4 @@ Hey everybody! I'm Mark Scott. I'm a Solution Architect from Phoenix, Arizona. I
 
 My other passion projects include home automation, 3D printing, and [removing daily cognitive load](https://hackernoon.com/minimizing-the-cognitive-load-in-your-life-bc14f4309fb2) from my life!
 
-{{< tenor url="https://tenor.com/view/hello-there-private-from-penguins-of-madagascar-hi-wave-hey-there-gif-16043627" width="100%" float="" >}}
+{{< tenor link="https://tenor.com/view/hello-there-private-from-penguins-of-madagascar-hi-wave-hey-there-gif-16043627" width="100%" float="" >}}
