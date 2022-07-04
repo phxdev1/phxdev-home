@@ -8,31 +8,91 @@
 <body>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://unpkg.com/netlify-cms@^2.9.6/dist/netlify-cms.js"></script>
+    <script src="https://tenor.com/embed.js"></script>
     <script>
         CMS.registerEditorComponent({
           id:"youtube",
           label: "YouTube",
           fields:[{
-             name: "link",
-             label: "link",
+             name: "id",
+             label: "ID",
              widget: "string",
              default: "https://www.youtube.com/watch?v=QILiHiTD3uc"
           }],
-          pattern: /{{< youtube "(.*)" >}}/,
+          pattern: /{{< youtube id="(.*)" >}}/,
           fromBlock: function(match){
              return{
-                link: match[1]
+                id: match[1]
+             };
+          },
+          toBlock: ({id}) =>
+             `{{< youtube id="${id}" >}}`,
+       
+          toPreview: ({id}) => {
+           return `
+           <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/${new URL(id).searchParams.get("v")}' frameborder='0' allowfullscreen></iframe></div>
+            `
+          }
+        });
+        CMS.registerEditorComponent({
+          id:"tenor",
+          label: "Tenor",
+          fields:[{
+             name: "link",
+             label: "Link",
+             widget: "string",
+             default: "16043627"
+          },
+          {
+             name: "width",
+             label: "Width",
+             widget: "string",
+             default: "100%"
+          },
+          {
+             name: "float",
+             label: "Float",
+             widget: "string"
+          }],
+          pattern: /{{< tenor link="(.*)" width="(.*)" float="(.*)" >}}/,
+          fromBlock: function(match){
+             return{
+                link: match[1],
+                width: match[2],
+                float: match[3]
+             };
+          },
+          toBlock: function(obj){
+             return `{{< tenor link="${obj.link}" width="${obj.width}" float="${obj.float}" >}}`
+          },
+       
+          toPreview: function(obj) {
+           return `<div class="tenor-gif-embed ${obj.float}" data-postid="${obj.link.split('-').slice(-1)[0]}" data-share-method="host" data-width="${obj.width}" data-aspect-ratio="1.7785714285714287"></div>`
+          }
+        });
+        CMS.registerEditorComponent({
+          id:"giphy",
+          label: "giphy",
+          fields:[{
+             name: "link",
+             label: "link",
+             widget: "string",
+             default: "https://giphy.com/gifs/foxhomeent-hello-friday-mrs-doubtfire-28GHfhGFWpFgsQB4wR"
+          }],
+          pattern: /{{< giphy "(.*)" >}}/,
+          fromBlock: function(match){
+             return{
+               link: match[1]
              };
           },
           toBlock: ({link}) =>
-             `{{< youtube "${link}" >}}`,
+             `{{< giphy "${link}" >}}`,
        
           toPreview: ({link}) => {
-           return `
-           <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/${new URL(link).searchParams.get("v")}' frameborder='0' allowfullscreen></iframe></div>
-            `
+           return `<div style="width:100%;height:0;padding-bottom:40%;position:relative;"><iframe src="https://giphy.com/embed/${link.split('-').slice(-1)[0]}" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>`;
           }
-        })
+        });
        </script>
+       
 </body>
 </html>
