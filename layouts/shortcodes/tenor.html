@@ -1,2 +1,21 @@
-{{ $id := index (last 1 (split (.Get 0) "-")) 0 }}
-<div class="tenor-gif-embed" data-postid="{{$id}}" data-share-method="host" data-width="100%" data-aspect-ratio="1.7785714285714287"></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+{{ $id := index (last 1 (split (.Get "url" | default (.Get 0)) "-")) 0 }}
+{{- $width := .Get "width" | default (.Get 1) -}}
+{{- $float := .Get "float" -}}
+<div class="tenor-gif-embed {{$float}}" data-postid="{{$id}}" data-share-method="host" data-width="{{ with $width }}{{ . }}{{ else }}100%{{end}}" data-aspect-ratio="1.7785714285714287"></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+<style>
+    .tenor-gif-embed.left{
+        float:left;
+    }
+    .tenor-gif-embed.right{
+        float:right;
+    }
+    .tenor-gif-embed.left::after,.tenor-gif-embed.right::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .tenor-gif-embed::before{
+        padding:0px;
+    }
+</style>
