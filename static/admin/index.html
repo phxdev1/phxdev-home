@@ -68,7 +68,9 @@
        
           toPreview: function(obj) {
              var postid = obj.url.split('-').slice(-1)[0];
-           return `<div class="tenor-gif-embed ${obj.float}" data-postid="${postid}" data-share-method="host" data-width="${obj.width}" data-aspect-ratio="1.7785714285714287"></div>`
+           return `<div class="tenor-gif-embed ${obj.float}" data-postid="${postid}" data-share-method="host" style="width:${obj.width};" data-aspect-ratio="1.7785714285714287">
+            <img src="https://via.placeholder.com/200x100"/>
+            </div>`
           }
         });
         CMS.registerEditorComponent({
