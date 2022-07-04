@@ -38,7 +38,7 @@
           id:"tenor",
           label: "Tenor",
           fields:[{
-             name: "link",
+             name: "url",
              label: "Link",
              widget: "string",
              default: "16043627"
@@ -54,20 +54,21 @@
              label: "Float",
              widget: "string"
           }],
-          pattern: /{{< tenor link="(.*)" width="(.*)" float="(.*)" >}}/,
+          pattern: /{{< tenor url="(.*)" width="(.*)" float="(.*)" >}}/,
           fromBlock: function(match){
              return{
-                link: match[1],
+               url: match[1],
                 width: match[2],
                 float: match[3]
              };
           },
           toBlock: function(obj){
-             return `{{< tenor link="${obj.link}" width="${obj.width}" float="${obj.float}" >}}`
+             return `{{< tenor url="${obj.url}" width="${obj.width}" float="${obj.float}" >}}`
           },
        
           toPreview: function(obj) {
-           return `<div class="tenor-gif-embed ${obj.float}" data-postid="${obj.link.split('-').slice(-1)[0]}" data-share-method="host" data-width="${obj.width}" data-aspect-ratio="1.7785714285714287"></div>`
+             var postid = obj.url.split('-').slice(-1)[0];
+           return `<div class="tenor-gif-embed ${obj.float}" data-postid="${postid}" data-share-method="host" data-width="${obj.width}" data-aspect-ratio="1.7785714285714287"></div>`
           }
         });
         CMS.registerEditorComponent({
