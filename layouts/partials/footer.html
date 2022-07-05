@@ -3,7 +3,7 @@
     {{ .Site.Params.footer.content | safeHTML }}
     &nbsp;
     {{ range $link := .Site.Params.footer.links }}
-    <a href="{{ $link.url }}" {{ if $link.new_window }}target="_blank" rel="noopener"
+    <a href="{{ $link.url }}" class="umami--click--footer_social_{{ $link.text }}" {{ if $link.new_window }}target="_blank" rel="noopener"
       {{ end }}>{{ $link.text }}</a>.
     {{ end }}
   </p><!-- .site-info -->
