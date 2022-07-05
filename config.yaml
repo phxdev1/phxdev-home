@@ -22,6 +22,7 @@ params:
     title: PhxDev
   layout_style: overflow
   palette: orange
+  description: "PhxDev - I drink beer, I write code"
 menu:
   main: []
 disableKinds:
