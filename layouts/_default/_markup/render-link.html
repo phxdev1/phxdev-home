@@ -1,0 +1,1 @@
+<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener" class='umami--click--{{ lower .Page.Title }}_{{ replaceRE "[^a-zA-Z\\d]+" "" (.Text | safeHTML) }}' {{ end }}>{{ .Text | safeHTML }}</a>
