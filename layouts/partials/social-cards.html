@@ -8,6 +8,7 @@
 <meta name="twitter:domain" content="phxdev.me"/>
 <meta name="author" content="Mark Scott">
 <meta property="og:image:secure_url" content="{{ with .Params.thumb_img_path }}{{ . }}{{else}}https://phxdev.me/images/logo_w_background.jpg{{end}}" />
+<meta name="image" property="og:image" content="{{ with .Params.thumb_img_path }}{{ . }}{{else}}https://phxdev.me/images/logo_w_background.jpg{{end}}" />
 {{ if .Params.thumb_img_path }}
 <!-- Twitter summary card with large image must be at least 280x150px -->
 <meta name="twitter:card" content="summary"/>
