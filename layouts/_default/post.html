@@ -4,6 +4,11 @@
     <header class="post-header">
       <h1 class="post-title underline">{{ .Params.title }}</h1>
     </header><!-- .post-header -->
+    <div class="post-meta">
+      <span>{{.ReadingTime}} mins</span> - <time class="published"
+      datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "Monday, January 2, 2006" }}</time>
+    </div>
+    </footer>
     {{ if .Params.subtitle }}
     <div class="post-subtitle">
       {{ .Params.subtitle | safeHTML }}
@@ -18,9 +23,7 @@
       {{ .Content }}
     </div><!-- .post-content -->
     <footer class="post-meta">
-      <time class="published"
-        datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "Monday, January 2, 2006" }}</time>
-    </footer><!-- .post-meta -->
+      <!-- .post-meta -->
   </article><!-- .post -->
 
   <!-- Next/previous post navigation TBD -->
