@@ -15,7 +15,7 @@ $palette: (
   accent-violet: #9371e6,
   accent-orange: #F2594B
 );
-
+@import "imports/custom";
 @import "imports/functions";
 
 @import "fontawesome.min.css";
@@ -31,3 +31,4 @@ $palette: (
 @import "imports/footer";
 @import "imports/palettes";
 @import "imports/banner";
+

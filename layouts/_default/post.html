@@ -1,9 +1,17 @@
 {{ define "content" }}
 
   <article class="post post-full">
+    {{ if .Params.thumb_img_path }}
+    <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ .Params.thumb_img_path | relURL }}');">
+      <div class="hero-text">
+        <h1 class="post-title underline">{{ .Params.title }}</h1>
+      </div>
+    </div>
+    {{else}}
     <header class="post-header">
       <h1 class="post-title underline">{{ .Params.title }}</h1>
     </header><!-- .post-header -->
+    {{end}}
     <div class="post-meta">
       <span>{{.ReadingTime}} mins</span> - <time class="published"
       datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "Monday, January 2, 2006" }}</time>
@@ -14,11 +22,7 @@
       {{ .Params.subtitle | safeHTML }}
     </div><!-- .post-subtitle -->
     {{ end }}
-    {{ if .Params.content_img_path }}
-    <div class="post-thumbnail">
-      <img src="{{ .Params.content_img_path | relURL }}" alt="{{ .Params.title }}" />
-    </div><!-- .post-thumbnail -->
-    {{ end }}
+
     <div class="post-content">
       {{ .Content }}
     </div><!-- .post-content -->
