@@ -7,7 +7,7 @@ var videoEmbeds = [
   'iframe[src*="youtube.com"]',
   'iframe[src*="vimeo.com"]'
 ];
-reframe(videoEmbeds.join(','));
+//reframe(videoEmbeds.join(','));
 
 // Mobile menu
 var menuToggle = document.getElementById('menu-toggle');
