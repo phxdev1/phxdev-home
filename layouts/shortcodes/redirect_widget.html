@@ -1,0 +1,8 @@
+{{ $externalURL := .Get "externalURL" | default (.Get 0) }}
+{{ $internalURL := .Get "internalURL" | default ("https://phxdev.me/") }}
+<script>
+    var ex = "{{ $externalURL }}";
+    umami('Redirect_External_' + ex);
+    window.open(ex, '_blank');
+    location.href = '{{ $internalURL }}';
+</script>
