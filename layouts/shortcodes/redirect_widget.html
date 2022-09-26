@@ -5,7 +5,8 @@
         var ex = "{{$externalURL}}";
         umami('Redirect_External_' + ex);
         window.open(ex, '_blank');
-        location.href = '{{$internalURL}}';
-    
+        setTimeout(function(){
+            location.href = '{{$internalURL}}';
+        }, 100);
 }, false);
 </script>
