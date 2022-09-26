@@ -1,10 +1,11 @@
 {{ $externalURL := .Get "externalURL" | default (.Get 0) }}
 {{ $internalURL := .Get "internalURL" | default ("https://phxdev.me/") }}
 <script>
-    (function(){
-        var ex = "{{ $externalURL }}";
+    document.addEventListener('DOMContentLoaded', function load() {
+        var ex = "{{$externalURL}}";
         umami('Redirect_External_' + ex);
         window.open(ex, '_blank');
-        location.href = '{{ $internalURL }}';
-    });
+        location.href = '{{$internalURL}}';
+    
+}, false);
 </script>
