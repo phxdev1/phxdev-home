@@ -1,12 +1,13 @@
 {{ $externalURL := .Get "externalURL" | default (.Get 0) }}
-{{ $internalURL := .Get "internalURL" | default ("https://phxdev.me/") }}
+<div>
+    Your browser should redirect in a moment. If it doesn't, please <a href="{{$externalURL}}">click here</a>.
+</div>
 <script>
+    
     document.addEventListener('DOMContentLoaded', function load() {
         var ex = "{{$externalURL}}";
         umami('Redirect_External_' + ex);
-        window.open(ex, '_blank');
-        setTimeout(function(){
-            location.href = '{{$internalURL}}';
-        }, 100);
+        location.href = '{{$externalURL}}';
+
 }, false);
 </script>
