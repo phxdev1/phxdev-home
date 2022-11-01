@@ -24,13 +24,9 @@ publish = "public"
   from = "/30"
   to = "https://calendly.com/phxdev/30"
   status = 301
-[[redirects]]
-  from = "/resources/themeparks/api/*"
-  to = "https://steel-wiry-dogwood.glitch.me/:splat"
-  status = 200
  [[redirects]]
-  from = "/resources/themeparks/docs/"
-  to = "https://phxdev-themeparks.readme.io/"
+  from = "/remarks"
+  to = "https://www.linkedin.com/newsletters/mark-s-remarks-a-blogsletter-6991824772707864576/"
   status = 301
   
   
