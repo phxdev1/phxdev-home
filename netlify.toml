@@ -31,7 +31,7 @@ publish = "public"
 [[redirects]]
   from = "/devitobot"
   to = "https://phxdev-falcon-180b-danny-devito.hf.space"
-  status = 200
+  status = 201
   
   
   
