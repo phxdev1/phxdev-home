@@ -29,7 +29,7 @@ publish = "public"
   to = "https://www.linkedin.com/newsletters/mark-s-remarks-a-blogsletter-6991824772707864576/"
   status = 301
 [[redirects]]
-  from = "/davitobot"
+  from = "/devitobot"
   to = "https://phxdev-falcon-180b-danny-devito.hf.space"
   status = 301
   
