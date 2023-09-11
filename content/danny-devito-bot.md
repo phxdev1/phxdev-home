@@ -6,4 +6,4 @@ menu:
     name: Danny DeVito Bot
 layout: page
 ---
-<div style="position: relative;overflow: hidden;padding-top: 125%;"><iframe border="0" loading="lazy" src="https://phxdev-falcon-180b-danny-devito.hf.space"></iframe></div>
+<iframe border="0" loading="lazy" style="border:none;width:98%; height: 87vh;" src="https://phxdev-falcon-180b-danny-devito.hf.space"></iframe>
