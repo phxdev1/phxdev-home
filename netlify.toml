@@ -28,6 +28,8 @@ publish = "public"
   from = "/remarks"
   to = "https://www.linkedin.com/newsletters/mark-s-remarks-a-blogsletter-6991824772707864576/"
   status = 301
-  
-  
+ [[redirects]]
+  from = "/icarus"
+  to = "https://icarius.pages.dev/"
+  status = 200
   
