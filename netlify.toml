@@ -30,6 +30,6 @@ publish = "public"
   status = 301
  [[redirects]]
   from = "/icarus"
-  to = "https://icarius.pages.dev/"
+  to = "https://www.linkedin.com/posts/phxdev_servicenow-servicenowadmin-servicenowdeveloper-activity-7157431522227101696-mDQR?utm_source=share&utm_medium=member_desktop"
   status = 200
   
